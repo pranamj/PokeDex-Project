@@ -1,0 +1,133 @@
+ /* CSS for pokemon card taken from https://uiverse.io (creator: @alexruix) */
+ 
+ body {
+    background-color: #2a9d8f;
+    font-family: monospace;
+    margin-top: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
+ }
+
+.hide  {
+   display: none;
+   background-color: orangered;
+}
+.visible  {
+   display: auto;
+   background-color: orangered;
+}
+#page-title h1, #pokemon-search, #pokeball-logo, #search-form {
+  text-align: center;
+}
+
+h1 {
+   font-size: 5rem;
+}
+
+#pokeball-logo img {
+   width: 150px
+}
+
+#page-title {
+   border-top-right-radius: 50px;
+   border-top-left-radius: 50px;
+}
+.section {
+
+padding: 10px;
+background-color: #e76f51;
+}
+
+.grid-container {
+   display: grid;
+   background-color: #e76f51;
+   grid-template-columns: repeat(3, 1fr);
+   grid-auto-rows: auto;
+   grid-gap: 3rem;
+   justify-content: center;
+   padding: 5%
+}
+
+
+
+.card {
+   width: auto;
+   height: 280px;
+   display: inline-block;
+   padding: .8em;
+   background: #f5f5f5;
+   position:relative;
+   overflow: visible;
+   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  }
+  
+  .card-img {
+   background-color: #ffcaa6;
+   height: 50%;
+   width: 100%;
+   display: flex;
+   border-radius: .5rem;
+   transition: .3s ease;
+   justify-content: center;
+  }
+
+  .card-img img {
+   padding: 10%;
+   width: 100%;
+   height: 100%;
+  }
+  
+  .card-info {
+   padding-top: 5%;
+  }
+  
+  
+
+  /*Text*/
+  .text-title {
+   padding-bottom: 0;
+   font-weight: 900;
+   font-size: 1.2rem;
+   line-height: 1;
+  }
+
+  .text-detail {
+   margin: 0;
+   padding: 1px;
+   font-weight: 500;
+   text-transform: capitalize;
+   font-size: 1rem;
+   line-height: 1;
+  }
+  
+
+  /*Button*/
+  .card-button {
+   border: 1px solid #252525;
+   justify-content: center;
+   display: flex;
+   padding: .3em;
+   cursor: pointer;
+   border-radius: 50px;
+   transition: .3s ease-in-out;
+  }
+
+  
+  /*Hover*/
+  .card-img:hover {
+   transform: translateY(-25%);
+   box-shadow: rgba(226, 196, 63, 0.25) 0px 13px 47px -5px, rgba(180, 71, 71, 0.3) 0px 8px 16px -8px;
+  }
+  
+  .card-button:hover {
+   border: 1px solid #ffcaa6;
+   background-color: orange;
+  }
+  
+  .detail-btn-text {
+   font-size: larger;
+   text-align: center;
+
+  }
